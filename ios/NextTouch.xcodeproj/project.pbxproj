@@ -234,7 +234,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ios-jit";
-				SWIFT_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				CODE_SIGNING_ALLOWED = NO;
@@ -261,7 +261,7 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/ios-jit";
-				SWIFT_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				CODE_SIGNING_ALLOWED = NO;
