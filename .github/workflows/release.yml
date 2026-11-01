@@ -1,0 +1,104 @@
+# NextTouch — release v0.1.0 (all platforms + SHA256SUMS)
+# Copyright (c) 2026 c12n Apps — GPL-2.0-or-later
+#
+# Fires on the v0.1.0 tag (and only that tag while the project is at
+# 0.1.0; widen the pattern when the version moves). Runs the three
+# platform builds, then publishes a GitHub release with:
+#   NextTouch-windows-x64.zip, NextTouch-windows-arm64.zip,
+#   NextTouch-android-arm64-v8a.apk, NextTouch-android-x86_64.apk,
+#   NextTouch.ipa, SHA256SUMS
+name: release
+
+on:
+  push:
+    tags:
+      - "v0.1.0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    uses: ./.github/workflows/build-windows.yml
+  android:
+    uses: ./.github/workflows/build-android.yml
+  ios:
+    uses: ./.github/workflows/build-ios.yml
+
+  publish:
+    name: publish-release
+    needs: [windows, android, ios]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Assemble release assets + SHA256SUMS
+        run: |
+          set -euo pipefail
+          ls -la dist
+          for f in \
+            NextTouch-windows-x64.zip \
+            NextTouch-windows-arm64.zip \
+            NextTouch-android-arm64-v8a.apk \
+            NextTouch-android-x86_64.apk \
+            NextTouch.ipa; do
+            test -f "dist/$f" || { echo "MISSING ASSET: $f"; exit 1; }
+          done
+          cd dist
+          sha256sum \
+            NextTouch-windows-x64.zip \
+            NextTouch-windows-arm64.zip \
+            NextTouch-android-arm64-v8a.apk \
+            NextTouch-android-x86_64.apk \
+            NextTouch.ipa > SHA256SUMS
+          cat SHA256SUMS
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: NextTouch v0.1.0
+          body: |
+            **NextTouch v0.1.0** — Copyright (c) 2026 c12n Apps, GPL-2.0-or-later.
+
+            First release: the shared device/firmware **picker, catalog, library
+            and settings** on Windows, Android and iOS — the foundation for
+            extending the qemu-ios family (LightTouch / iOS-Emulator) toward
+            **iOS 8, 9 and 10**.
+
+            **Honest status:** no iOS 8/9/10 firmware boots yet. The engine's
+            newest SoC today is the A4; the A5 machine (iPhone 4S, iOS 8.4.1)
+            is the first engine target on the roadmap, then A6 for iOS 10.
+            Every iOS 8/9/10 entry in the picker is labelled "Not booting yet".
+            Legacy iPhone OS 1 – iOS 7 firmwares carry the baseline engine's
+            real statuses. See docs/ROADMAP.md and docs/COMPATIBILITY.md in
+            the repo.
+
+            Assets (all 64-bit):
+            - `NextTouch-windows-x64.zip`, `NextTouch-windows-arm64.zip`
+            - `NextTouch-android-arm64-v8a.apk`, `NextTouch-android-x86_64.apk`
+              (package `com.c12n.nexttouch`, min Android 10)
+            - `NextTouch.ipa` — unsigned, sideload-only (min iOS 17.0).
+              Sign with a **development** certificate: JIT needs
+              get-task-allow. The IPA includes the Husk-method JIT substrate
+              (detection + three-state JIT screen); the prewarm activates
+              with the engine phase.
+            - `SHA256SUMS` covers every asset.
+
+            Privacy: no telemetry, no accounts, no network calls in v0.1.0;
+            the only planned network path is an IPSW download from Apple on
+            user tap, SHA-256 verified. Firmware is never bundled.
+          files: |
+            dist/NextTouch-windows-x64.zip
+            dist/NextTouch-windows-arm64.zip
+            dist/NextTouch-android-arm64-v8a.apk
+            dist/NextTouch-android-x86_64.apk
+            dist/NextTouch.ipa
+            dist/SHA256SUMS
