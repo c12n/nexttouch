@@ -1,0 +1,1123 @@
+{
+  "schema": "nexttouch-catalog/1",
+  "catalog_version": 1,
+  "generated_at_utc": "2026-11-01T07:57:11Z",
+  "generated_by": "tools/gen_catalog.py",
+  "source": "https://api.ipsw.me/v4 (firmware URLs + SHA-256); device/SoC/status curation in tools/gen_catalog.py from LightTouch compatibility docs and the NextTouch engine-feasibility audit",
+  "verified": false,
+  "quick_start": [
+    "iPhone4,1:8.4.1",
+    "iPad2,1:8.4.1",
+    "iPhone5,1:8.4.1"
+  ],
+  "devices": [
+    {
+      "identifier": "iPod1,1",
+      "name": "iPod touch 1G",
+      "board": "n45ap",
+      "soc": "S5L8900",
+      "soc_chip": "S5L8900",
+      "arch": "armv6",
+      "display_px": [
+        320,
+        480
+      ],
+      "ram_mb": 128,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n45ap-7E18",
+          "version": "3.1.3",
+          "build": "7E18",
+          "os_name": "iPhone OS",
+          "ios_major": 3,
+          "ipsw_filename": null,
+          "download_url": null,
+          "sha256": null,
+          "sha256_note": "ipsw.me does not list an IPSW for this firmware on this device, so no download URL or SHA-256 is recorded (version/build are curated from the baseline LightTouch catalog). Nothing is fabricated -- the engine phase sources this firmware separately.",
+          "signed": null,
+          "status": "experimental",
+          "stage": "skeleton"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone1,1",
+      "name": "iPhone (2G)",
+      "board": "m68ap",
+      "soc": "S5L8900",
+      "soc_chip": "S5L8900",
+      "arch": "armv6",
+      "display_px": [
+        320,
+        480
+      ],
+      "ram_mb": 128,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "m68ap-7E18",
+          "version": "3.1.3",
+          "build": "7E18",
+          "os_name": "iPhone OS",
+          "ios_major": 3,
+          "ipsw_filename": "iPhone1,1_3.1.3_7E18_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iPhone/061-7481.20100202.4orot/iPhone1,1_3.1.3_7E18_Restore.ipsw",
+          "sha256": "ae27cb853cb57ba679f576400bee71ffe689ccd55763383ec8b9c6f422874e4e",
+          "sha256_note": null,
+          "signed": false,
+          "status": "experimental",
+          "stage": "skeleton"
+        }
+      ]
+    },
+    {
+      "identifier": "iPod2,1",
+      "name": "iPod touch 2G",
+      "board": "n72ap",
+      "soc": "S5L8720",
+      "soc_chip": "S5L8720",
+      "arch": "armv6",
+      "display_px": [
+        320,
+        480
+      ],
+      "ram_mb": 128,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n72ap-7E18",
+          "version": "3.1.3",
+          "build": "7E18",
+          "os_name": "iPhone OS",
+          "ios_major": 3,
+          "ipsw_filename": null,
+          "download_url": null,
+          "sha256": null,
+          "sha256_note": "ipsw.me does not list an IPSW for this firmware on this device, so no download URL or SHA-256 is recorded (version/build are curated from the baseline LightTouch catalog). Nothing is fabricated -- the engine phase sources this firmware separately.",
+          "signed": null,
+          "status": "tested",
+          "stage": "qualified"
+        },
+        {
+          "id": "n72ap-8C148",
+          "version": "4.2.1",
+          "build": "8C148",
+          "os_name": "iOS",
+          "ios_major": 4,
+          "ipsw_filename": "iPod2,1_4.2.1_8C148_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iPhone4/061-9855.20101122.Lrft6/iPod2,1_4.2.1_8C148_Restore.ipsw",
+          "sha256": "d1b96e80504d817b5398822e2027b1c896227e1de3674d08a100330ea5a5a8d4",
+          "sha256_note": null,
+          "signed": true,
+          "status": "tested",
+          "stage": "qualified"
+        }
+      ]
+    },
+    {
+      "identifier": "iPod3,1",
+      "name": "iPod touch 3G",
+      "board": "n18ap",
+      "soc": "S5L8922",
+      "soc_chip": "S5L8922",
+      "arch": "armv7",
+      "display_px": [
+        320,
+        480
+      ],
+      "ram_mb": 256,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n18ap-8C148",
+          "version": "4.2.1",
+          "build": "8C148",
+          "os_name": "iOS",
+          "ios_major": 4,
+          "ipsw_filename": "iPod3,1_4.2.1_8C148_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iPhone4/061-9860.20101122.Xsde3/iPod3,1_4.2.1_8C148_Restore.ipsw",
+          "sha256": "9b44986e5df685278d940069af924f11fcf247b2af7e20b34d2ab607efddb0dc",
+          "sha256_note": null,
+          "signed": false,
+          "status": "tested",
+          "stage": "qualified"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone2,1",
+      "name": "iPhone 3GS",
+      "board": "n88ap",
+      "soc": "S5L8920",
+      "soc_chip": "S5L8920",
+      "arch": "armv7",
+      "display_px": [
+        320,
+        480
+      ],
+      "ram_mb": 256,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n88ap-9B206",
+          "version": "5.1.1",
+          "build": "9B206",
+          "os_name": "iOS",
+          "ios_major": 5,
+          "ipsw_filename": "iPhone2,1_5.1.1_9B206_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS5.1.1/041-4347.20120427.o2yov/iPhone2,1_5.1.1_9B206_Restore.ipsw",
+          "sha256": "03962930616fa22eae1e4f96b751ee7ff70b6b0f29bdaeae2743096a7a9455f0",
+          "sha256_note": null,
+          "signed": false,
+          "status": "tested_slow",
+          "stage": "usable"
+        }
+      ]
+    },
+    {
+      "identifier": "iPod4,1",
+      "name": "iPod touch 4G",
+      "board": "n81ap",
+      "soc": "A4",
+      "soc_chip": "S5L8930",
+      "arch": "armv7",
+      "display_px": [
+        640,
+        960
+      ],
+      "ram_mb": 256,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n81ap-10B500",
+          "version": "6.1.6",
+          "build": "10B500",
+          "os_name": "iOS",
+          "ios_major": 6,
+          "ipsw_filename": "iPod4,1_6.1.6_10B500_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS6.1/031-3211.20140221.Placef/iPod4,1_6.1.6_10B500_Restore.ipsw",
+          "sha256": "1f6096c3298c87172f431e4924a4cf3c53298e5920f4b6c817929aa32d90c5ff",
+          "sha256_note": null,
+          "signed": true,
+          "status": "tested",
+          "stage": "qualified"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone3,1",
+      "name": "iPhone 4",
+      "board": "n90ap",
+      "soc": "A4",
+      "soc_chip": "S5L8930",
+      "arch": "armv7",
+      "display_px": [
+        640,
+        960
+      ],
+      "ram_mb": 512,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n90ap-8C148",
+          "version": "4.2.1",
+          "build": "8C148",
+          "os_name": "iOS",
+          "ios_major": 4,
+          "ipsw_filename": "iPhone3,1_4.2.1_8C148_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iPhone4/061-9858.20101122.Er456/iPhone3,1_4.2.1_8C148_Restore.ipsw",
+          "sha256": null,
+          "sha256_note": "ipsw.me lists no SHA-256 for this firmware",
+          "signed": false,
+          "status": "tested_slow",
+          "stage": "usable"
+        },
+        {
+          "id": "n90ap-8L1",
+          "version": "4.3.5",
+          "build": "8L1",
+          "os_name": "iOS",
+          "ios_major": 4,
+          "ipsw_filename": "iPhone3,1_4.3.5_8L1_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iPhone4/041-1966.20110721.V3Ufe/iPhone3,1_4.3.5_8L1_Restore.ipsw",
+          "sha256": "54040d08602e6a9894a4671393b0c335d51bdb55a3e28a336676c5facc592349",
+          "sha256_note": null,
+          "signed": false,
+          "status": "tested_slow",
+          "stage": "usable"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad1,1",
+      "name": "iPad 1",
+      "board": "k48ap",
+      "soc": "A4",
+      "soc_chip": "S5L8930",
+      "arch": "armv7",
+      "display_px": [
+        768,
+        1024
+      ],
+      "ram_mb": 256,
+      "tier": "legacy",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "k48ap-9B206",
+          "version": "5.1.1",
+          "build": "9B206",
+          "os_name": "iOS",
+          "ios_major": 5,
+          "ipsw_filename": "iPad1,1_5.1.1_9B206_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS5.1.1/041-4292.02120427.Tkk0d/iPad1,1_5.1.1_9B206_Restore.ipsw",
+          "sha256": "3ced89736d6149c92d59484648e1fffcc61debeeb88e0e528dca9b288707fa18",
+          "sha256_note": null,
+          "signed": true,
+          "status": "experimental",
+          "stage": "skeleton"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone4,1",
+      "name": "iPhone 4S",
+      "board": "n94ap",
+      "soc": "A5",
+      "soc_chip": "S5L8940",
+      "arch": "armv7",
+      "display_px": [
+        640,
+        960
+      ],
+      "ram_mb": 512,
+      "tier": "target",
+      "quick_start": true,
+      "firmwares": [
+        {
+          "id": "n94ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPhone4,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31129-20150812-751A3CB8-3C8F-11E5-A8A5-A91A3A53DB92/iPhone4,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "68a5f724ec43b020caec7e83768252727173f0c180f12ee3d6ba8fc8aa90b27a",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n94ap-13G37",
+          "version": "9.3.6",
+          "build": "13G37",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone4,1_9.3.6_13G37_Restore.ipsw",
+          "download_url": "https://updates.cdn-apple.com/2019/ios/041-80043-20190722-6C65AD27-69D8-499C-BC15-DE7AC74DE2BD/iPhone4,1_9.3.6_13G37_Restore.ipsw",
+          "sha256": "2466a99001c9e091e22f330a1c97a231179d1679f58fd9d1cf0c1694ca8261bd",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad2,1",
+      "name": "iPad 2 (Wi-Fi)",
+      "board": "k93ap",
+      "soc": "A5",
+      "soc_chip": "S5L8940",
+      "arch": "armv7",
+      "display_px": [
+        768,
+        1024
+      ],
+      "ram_mb": 512,
+      "tier": "target",
+      "quick_start": true,
+      "firmwares": [
+        {
+          "id": "k93ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad2,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31231-20150812-751BEF2C-3C8F-11E5-94D1-BB1A3A53DB92/iPad2,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "bc890d8f49b4c30855f2b67862b97b84b4c4a0f98539f814262ad737a7acb0e3",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "k93ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad2,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73136-20160825-6A2B0F0A-6711-11E6-BE6C-193834D2D062/iPad2,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "7e953e82f9f19406d8aa32920ba6366bd2c480b07c80db282b288150b72358ac",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPod5,1",
+      "name": "iPod touch 5",
+      "board": "n78ap",
+      "soc": "A5",
+      "soc_chip": "S5L8942",
+      "arch": "armv7",
+      "display_px": [
+        640,
+        1136
+      ],
+      "ram_mb": 512,
+      "tier": "target",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n78ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPod5,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31324-20150812-5AAFE21E-3C90-11E5-BEE3-6A1C3A53DB92/iPod5,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "54f66361e9699d60909241eec550082a6692f0c41494bc7807518e812f2e32eb",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n78ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPod5,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73183-20160825-6A2D8488-6711-11E6-9C7E-1B3834D2D062/iPod5,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "4a4857db19d68ca135e91b800f351cda7c96c1ae63b29ab0cf0eccaebb14f7e7",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad2,5",
+      "name": "iPad mini 1 (Wi-Fi)",
+      "board": "p105ap",
+      "soc": "A5",
+      "soc_chip": "S5L8942",
+      "arch": "armv7",
+      "display_px": [
+        768,
+        1024
+      ],
+      "ram_mb": 512,
+      "tier": "target",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "p105ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad2,5_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31249-20150812-75235CC6-3C8F-11E5-848D-BE1A3A53DB92/iPad2,5_8.4.1_12H321_Restore.ipsw",
+          "sha256": "ce6cd59a4a3271eccb93b31c8d40e94ad966112999576663b3ab235196154756",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "p105ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad2,5_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-74004-20160825-995D69FE-6715-11E6-A974-933E34D2D062/iPad2,5_9.3.5_13G36_Restore.ipsw",
+          "sha256": "7c711cdbf8024f84def7e10de39e86df6cc2373ec3741f132cc52a74182505c7",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad3,1",
+      "name": "iPad 3 (Wi-Fi)",
+      "board": "j1ap",
+      "soc": "A5X",
+      "soc_chip": "S5L8945",
+      "arch": "armv7",
+      "display_px": [
+        1536,
+        2048
+      ],
+      "ram_mb": 1024,
+      "tier": "target",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "j1ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad3,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31361-20150812-6F176506-3C90-11E5-AE5F-D01C3A53DB92/iPad3,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "8443ef184cee2905e4b5c32f621ae50da6d1b8e45330b840c3dfbd21802b72ba",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j1ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad3,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73961-20160825-88328FDE-6714-11E6-97F2-B63D34D2D062/iPad3,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "ceec5670fe63f113b766a09b189c50a31e96e4c538905076216fb21170385c95",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone5,1",
+      "name": "iPhone 5 (GSM)",
+      "board": "n41ap",
+      "soc": "A6",
+      "soc_chip": "S5L8950",
+      "arch": "armv7s",
+      "display_px": [
+        640,
+        1136
+      ],
+      "ram_mb": 1024,
+      "tier": "experimental",
+      "quick_start": true,
+      "firmwares": [
+        {
+          "id": "n41ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPhone5,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31186-20150812-751D243C-3C8F-11E5-8E4F-B51A3A53DB92/iPhone5,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "53cc890ff485b8f3775afe76764512d98d77d9ef990df3552df0d35ff2bfb5a1",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n41ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone5,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73092-20160825-6A2CE0C8-6711-11E6-8CBD-153834D2D062/iPhone5,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "081d6693cff70350a0955a7e92dd41eeb239f092dc77b5383940dce280ae7a0b",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n41ap-14G61",
+          "version": "10.3.4",
+          "build": "14G61",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_4.0_32bit_10.3.4_14G61_Restore.ipsw",
+          "download_url": "https://updates.cdn-apple.com/2019/ios/091-25277-20190722-0C1B94DE-992C-11E9-A2EE-E2C9A77C2E40/iPhone_4.0_32bit_10.3.4_14G61_Restore.ipsw",
+          "sha256": "31b4e67cdeae511bd27ff8a2a285753f7ac9608b8d848e1dec68efc980108695",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone5,3",
+      "name": "iPhone 5c (GSM)",
+      "board": "n48ap",
+      "soc": "A6",
+      "soc_chip": "S5L8950",
+      "arch": "armv7s",
+      "display_px": [
+        640,
+        1136
+      ],
+      "ram_mb": 1024,
+      "tier": "experimental",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n48ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPhone5,3_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31126-20150812-751B1656-3C8F-11E5-8F6B-A71A3A53DB92/iPhone5,3_8.4.1_12H321_Restore.ipsw",
+          "sha256": "29ceb1c5a0c9d164af86b5e323ea358b92662839a8ae013139dcb1191dc26965",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n48ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone5,3_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73063-20160825-6A2A4B60-6711-11E6-BBE3-113834D2D062/iPhone5,3_9.3.5_13G36_Restore.ipsw",
+          "sha256": "90110a1f54c611bec7b09ed6532e2f103ed88e954fbda6adad6fa2fc00229b49",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n48ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_4.0_32bit_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23384-20170719-CA966D80-6977-11E7-9F96-3E9100BA0AE3/iPhone_4.0_32bit_10.3.3_14G60_Restore.ipsw",
+          "sha256": "8d105cb8174b7538fef3297251fc9debc287292257bd29c792addf5a4ab7ad2e",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad3,4",
+      "name": "iPad 4 (Wi-Fi)",
+      "board": "p101ap",
+      "soc": "A6X",
+      "soc_chip": "S5L8955",
+      "arch": "armv7s",
+      "display_px": [
+        1536,
+        2048
+      ],
+      "ram_mb": 1024,
+      "tier": "experimental",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "p101ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad3,4_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31234-20150812-751D30B2-3C8F-11E5-895A-BD1A3A53DB92/iPad3,4_8.4.1_12H321_Restore.ipsw",
+          "sha256": "8dccbf5951288eb63a0fed45f982aa9b9a978fe493d138f4db81bbdb910101a7",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "p101ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad3,4_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73975-20160825-B6B3F26C-6714-11E6-BF05-EA3D34D2D062/iPad3,4_9.3.5_13G36_Restore.ipsw",
+          "sha256": "a0627f336454295238705a8b56ba9a118eb48f0a7cf4e4683a90c219cabdfd67",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "p101ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPad_32bit_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23117-20170719-CA973B02-6977-11E7-953B-279100BA0AE3/iPad_32bit_10.3.3_14G60_Restore.ipsw",
+          "sha256": "3e2bd7d18823d93736a68d85961ff7ece5dd932a19c58d52e43282a6ea6ac312",
+          "sha256_note": null,
+          "signed": true,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone6,1",
+      "name": "iPhone 5s (GSM)",
+      "board": "n51ap",
+      "soc": "A7",
+      "soc_chip": "S5L8960",
+      "arch": "arm64",
+      "display_px": [
+        640,
+        1136
+      ],
+      "ram_mb": 1024,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n51ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPhone6,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios8.4.1/031-31174-20150812-75196C52-3C8F-11E5-8C71-B31A3A53DB92/iPhone6,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "212a2cde3e989e78bc44fe3a43e9bcc76be804fbe78757d2e3a32ef0ef21f3a4",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n51ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone6,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-73552-20160825-6A3EEC1E-6711-11E6-96E4-303834D2D062/iPhone6,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "782dcc4ef8ab37c456bcfd850c6b1b249ec976375fcc2a21c59e58994e2cad46",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n51ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_4.0_64bit_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23133-20170719-CA8E78E6-6977-11E7-968B-2B9100BA0AE3/iPhone_4.0_64bit_10.3.3_14G60_Restore.ipsw",
+          "sha256": "de02b5d0e991d4af4f06149196200345112b1a79c1d6b7f7c2b76cb1c2721111",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad4,1",
+      "name": "iPad Air (Wi-Fi)",
+      "board": "j71ap",
+      "soc": "A7",
+      "soc_chip": "S5L8965",
+      "arch": "arm64",
+      "display_px": [
+        1536,
+        2048
+      ],
+      "ram_mb": 1024,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "j71ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad4,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios8.4.1/031-31311-20150812-53F5D078-3C90-11E5-8FFE-4A1C3A53DB92/iPad4,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "2787f203b895ab00a0a483d8815cba8f8eb48d5cdf5dbee1c8a9b2d44d2dd8ae",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j71ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad4,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-73904-20160825-F69F5DCE-6711-11E6-B7AA-713C34D2D062/iPad4,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "2693b36da3d575fc6128731319afa2b6dc31b8a3201eb4001bfd6d62d9b4b246",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j71ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPad_64bit_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23378-20170719-CA983C78-6977-11E7-8922-3D9100BA0AE3/iPad_64bit_10.3.3_14G60_Restore.ipsw",
+          "sha256": "d39133870deaa4d8a2f984707b8bfe0d5130a43ff8d9fb1d8ad4abc139d88765",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad4,4",
+      "name": "iPad mini 2 (Wi-Fi)",
+      "board": "j85ap",
+      "soc": "A7",
+      "soc_chip": "S5L8960",
+      "arch": "arm64",
+      "display_px": [
+        1536,
+        2048
+      ],
+      "ram_mb": 1024,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "j85ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad4,4_8.4.1_12H321_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios8.4.1/031-31035-20150812-7516931A-3C8F-11E5-BAB2-9F1A3A53DB92/iPad4,4_8.4.1_12H321_Restore.ipsw",
+          "sha256": "61b61053148ca50aae015b1bb0625750ac9e687868eb01be3b699ffc2ad845c8",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j85ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad4,4_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-73536-20160825-6A317D5E-6711-11E6-BEE0-2B3834D2D062/iPad4,4_9.3.5_13G36_Restore.ipsw",
+          "sha256": "27570b144ae2ec6848f07907fc28091430e6781f661308a08cfce925c96d4917",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j85ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPad_64bit_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23378-20170719-CA983C78-6977-11E7-8922-3D9100BA0AE3/iPad_64bit_10.3.3_14G60_Restore.ipsw",
+          "sha256": "d39133870deaa4d8a2f984707b8bfe0d5130a43ff8d9fb1d8ad4abc139d88765",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone7,2",
+      "name": "iPhone 6",
+      "board": "n61ap",
+      "soc": "A8",
+      "soc_chip": "T7000",
+      "arch": "arm64",
+      "display_px": [
+        750,
+        1334
+      ],
+      "ram_mb": 1024,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n61ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPhone7,2_8.4.1_12H321_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios8.4.1/031-31156-20150812-751889C2-3C8F-11E5-9F80-AB1A3A53DB92/iPhone7,2_8.4.1_12H321_Restore.ipsw",
+          "sha256": "e3df89ab8387fc9026190ce71d710307fb7d955cec550f3cc5d0d2069792659e",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n61ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone7,2_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-74065-20160825-ED8CC5EC-6715-11E6-B0E2-EF3E34D2D062/iPhone7,2_9.3.5_13G36_Restore.ipsw",
+          "sha256": "5d5fae7171ca50d32aca97ce126a83f8375376f5e53d15f8afbe7b2e0c0031b3",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n61ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_4.7_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23441-20170719-CA9B0570-6977-11E7-95CC-3F9100BA0AE3/iPhone_4.7_10.3.3_14G60_Restore.ipsw",
+          "sha256": "3190e9f9038044a3366231f133cfc276f14d76ed80698c3c144f6f85558cf5f6",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPad5,3",
+      "name": "iPad Air 2 (Wi-Fi)",
+      "board": "j81ap",
+      "soc": "A8X",
+      "soc_chip": "T7001",
+      "arch": "arm64",
+      "display_px": [
+        1536,
+        2048
+      ],
+      "ram_mb": 2048,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "j81ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPad5,3_8.4.1_12H321_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios8.4.1/031-31386-20150812-A4FC2602-3C90-11E5-B036-A21D3A53DB92/iPad5,3_8.4.1_12H321_Restore.ipsw",
+          "sha256": "9a10c37f4e0fbdecfdc691f41b1e9a7e00debfc60f3ac38025c78dd893b28d44",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j81ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPad5,3_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-73862-20160825-EF8893FC-6711-11E6-B86B-453C34D2D062/iPad5,3_9.3.5_13G36_Restore.ipsw",
+          "sha256": "1dc09b4db25e00b809b35e5074c7bc16aeb2e87591c761aacbdf920106ab01c5",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "j81ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPad_64bit_TouchID_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23287-20170719-CA9523BC-6977-11E7-A56D-329100BA0AE3/iPad_64bit_TouchID_10.3.3_14G60_Restore.ipsw",
+          "sha256": "13713ac828b69c6e8b1cbda60dcefe09cb3aeeee45425944144d61b9026d815a",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPod7,1",
+      "name": "iPod touch 6",
+      "board": "n102ap",
+      "soc": "A8",
+      "soc_chip": "T7000",
+      "arch": "arm64",
+      "display_px": [
+        640,
+        1136
+      ],
+      "ram_mb": 1024,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n102ap-12H321",
+          "version": "8.4.1",
+          "build": "12H321",
+          "os_name": "iOS",
+          "ios_major": 8,
+          "ipsw_filename": "iPod7,1_8.4.1_12H321_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/ios8.4.1/031-31024-20150812-751694AA-3C8F-11E5-B90B-9D1A3A53DB92/iPod7,1_8.4.1_12H321_Restore.ipsw",
+          "sha256": "c046fec0bd0a7e36401adf18bbeea9d4dd6b84a55c5e935e0a2f95964f63ee8a",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n102ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPod7,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "https://secure-appldnld.apple.com/iOS9.3.5/031-73494-20160825-6A342504-6711-11E6-BEA6-293834D2D062/iPod7,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "c44081a1f427c284a72d685a2a9f30c64e0e7ff9dfc324c96f7171fd966c2acf",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n102ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPodtouch_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23191-20170719-CA92B7F8-6977-11E7-9ADB-2F9100BA0AE3/iPodtouch_10.3.3_14G60_Restore.ipsw",
+          "sha256": "b8127970a21200d9eea60936bd740f8966673963fb47f1d658a2bf8fa59d040f",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone8,1",
+      "name": "iPhone 6s",
+      "board": "n71ap",
+      "soc": "A9",
+      "soc_chip": "S8000",
+      "arch": "arm64",
+      "display_px": [
+        750,
+        1334
+      ],
+      "ram_mb": 2048,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "n71ap-13G36",
+          "version": "9.3.5",
+          "build": "13G36",
+          "os_name": "iOS",
+          "ios_major": 9,
+          "ipsw_filename": "iPhone8,1_9.3.5_13G36_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/iOS9.3.5/031-73998-20160825-34E22EF6-6715-11E6-A9F0-5D3E34D2D062/iPhone8,1_9.3.5_13G36_Restore.ipsw",
+          "sha256": "e6c529effd8db789c78b67c2d05b0166f9ce980cfe07d2e7dc8ee275ead2605f",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        },
+        {
+          "id": "n71ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_4.7_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23441-20170719-CA9B0570-6977-11E7-95CC-3F9100BA0AE3/iPhone_4.7_10.3.3_14G60_Restore.ipsw",
+          "sha256": "3190e9f9038044a3366231f133cfc276f14d76ed80698c3c144f6f85558cf5f6",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    },
+    {
+      "identifier": "iPhone9,1",
+      "name": "iPhone 7",
+      "board": "d10ap",
+      "soc": "A10 Fusion",
+      "soc_chip": "T8010",
+      "arch": "arm64",
+      "display_px": [
+        750,
+        1334
+      ],
+      "ram_mb": 2048,
+      "tier": "future",
+      "quick_start": false,
+      "firmwares": [
+        {
+          "id": "d10ap-14G60",
+          "version": "10.3.3",
+          "build": "14G60",
+          "os_name": "iOS",
+          "ios_major": 10,
+          "ipsw_filename": "iPhone_7_10.3.3_14G60_Restore.ipsw",
+          "download_url": "http://appldnld.apple.com/ios10.3.3/091-23304-20170719-CA9AC9AC-6977-11E7-9507-349100BA0AE3/iPhone_7_10.3.3_14G60_Restore.ipsw",
+          "sha256": "e9c5f7b3c52b8d1123c5dbf65e81f1e490c82cc200fca89d2b97462d4d9231a4",
+          "sha256_note": null,
+          "signed": false,
+          "status": "not_booting_yet",
+          "stage": "planned"
+        }
+      ]
+    }
+  ]
+}

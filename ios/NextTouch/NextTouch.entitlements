@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- NextTouch iOS — Copyright (c) 2026 c12n Apps
+     SPDX-License-Identifier: GPL-2.0-or-later
+
+     Exactly Husk's four entitlements (src/app/Husk/Husk.entitlements):
+     - get-task-allow: THE load-bearing one. Only development profiles
+       carry it; without it no debugger may attach and JIT is impossible.
+       NextTouch is sideload-only and must be development-signed for JIT.
+     - dynamic-codesigning: pre-TXM self-grant route only (MAP_JIT).
+       NOTE ITS LIMITS: it is honoured only for platform binaries or
+       where PPL/TXM does not apply, and it is on TrollStore's
+       banned-entitlements list (launch-kill there) — TrollStore packaging
+       must strip it. On TXM systems the debugger breakpoint-RPC route is
+       used instead; this key plays no part there.
+     - com.apple.developer.kernel.increased-memory-limit and
+       com.apple.developer.kernel.extended-virtual-addressing: memory /
+       address-space headroom for the emulator's guests, enabled on the
+       App ID so the development profile carries them; re-signers only
+       preserve what the profile holds.
+     Verified ABSENT (they play no part in this JIT design):
+     com.apple.security.cs.allow-jit, cs.allow-unsigned-executable-memory,
+     cs.disable-library-validation. -->
+<plist version="1.0">
+<dict>
+	<key>get-task-allow</key>
+	<true/>
+	<key>dynamic-codesigning</key>
+	<true/>
+	<key>com.apple.developer.kernel.increased-memory-limit</key>
+	<true/>
+	<key>com.apple.developer.kernel.extended-virtual-addressing</key>
+	<true/>
+</dict>
+</plist>

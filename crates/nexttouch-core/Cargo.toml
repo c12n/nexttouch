@@ -1,0 +1,13 @@
+# NextTouch core crate — Copyright (c) 2026 c12n Apps
+# SPDX-License-Identifier: GPL-2.0-or-later
+[package]
+name = "nexttouch-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Platform-independent NextTouch logic: settings, library manifest, privacy rules"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+nexttouch-catalog = { path = "../nexttouch-catalog" }

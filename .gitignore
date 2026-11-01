@@ -1,0 +1,25 @@
+# Rust
+/target/
+Cargo.lock
+
+# Android / Gradle
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+# catalog.json is copied into android assets at build time by the
+# copyCatalog Gradle task; the single source of truth is
+# crates/nexttouch-catalog/assets/catalog.json
+android/app/src/main/assets/catalog.json
+
+# iOS / Xcode
+ios/NextTouch.xcodeproj/xcuserdata/
+ios/NextTouch.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

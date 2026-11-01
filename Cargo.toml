@@ -1,0 +1,17 @@
+# NextTouch — Copyright (c) 2026 c12n Apps
+# SPDX-License-Identifier: GPL-2.0-or-later
+[workspace]
+resolver = "2"
+members = [
+    "crates/nexttouch-catalog",
+    "crates/nexttouch-core",
+    "apps/desktop",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-2.0-or-later"
+
+[profile.release]
+panic = "unwind"

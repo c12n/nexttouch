@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+		AA0000000000000000000001 /* NextTouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* NextTouchApp.swift */; };
+		AA0000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* ContentView.swift */; };
+		AA0000000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* Models.swift */; };
+		AA0000000000000000000004 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000018 /* AppStore.swift */; };
+		AA0000000000000000000005 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000019 /* PickerView.swift */; };
+		AA0000000000000000000006 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001A /* LibraryView.swift */; };
+		AA0000000000000000000007 /* JITStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001B /* JITStatusView.swift */; };
+		AA0000000000000000000008 /* JITBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001C /* JITBridge.swift */; };
+		AA0000000000000000000009 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001D /* SettingsView.swift */; };
+		AA000000000000000000000A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001E /* AboutView.swift */; };
+		AA000000000000000000000B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000022 /* LaunchScreen.storyboard */; };
+		AA000000000000000000000C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000023 /* PrivacyInfo.xcprivacy */; };
+		AA0000000000000000000010 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000028 /* catalog.json */; };
+		AA000000000000000000000D /* NextTouchJIT.c in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000024 /* NextTouchJIT.c */; };
+		AA000000000000000000000E /* nexttouch-brk.S in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000026 /* nexttouch-brk.S */; };
+		AA000000000000000000000F /* nexttouch-jit.js in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000027 /* nexttouch-jit.js */; };
+
+		AA0000000000000000000015 /* NextTouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextTouchApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AA0000000000000000000018 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		AA0000000000000000000019 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001B /* JITStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JITStatusView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001C /* JITBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JITBridge.swift; sourceTree = "<group>"; };
+		AA000000000000000000001D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001F /* NextTouch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextTouch-Bridging-Header.h; sourceTree = "<group>"; };
+		AA0000000000000000000020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000000000000000000021 /* NextTouch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NextTouch.entitlements; sourceTree = "<group>"; };
+		AA0000000000000000000022 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA0000000000000000000023 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AA0000000000000000000024 /* NextTouchJIT.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NextTouchJIT.c; sourceTree = "<group>"; };
+		AA0000000000000000000025 /* NextTouchJIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextTouchJIT.h; sourceTree = "<group>"; };
+		AA0000000000000000000026 /* nexttouch-brk.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = nexttouch-brk.S; sourceTree = "<group>"; };
+		AA0000000000000000000027 /* nexttouch-jit.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = nexttouch-jit.js; sourceTree = "<group>"; };
+		AA0000000000000000000028 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = catalog.json; path = ../crates/nexttouch-catalog/assets/catalog.json; sourceTree = "<group>"; };
+		AA0000000000000000000029 /* NextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		AA000000000000000000002B /* NextTouch */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000015 /* NextTouchApp.swift */,
+				AA0000000000000000000016 /* ContentView.swift */,
+				AA0000000000000000000017 /* Models.swift */,
+				AA0000000000000000000018 /* AppStore.swift */,
+				AA0000000000000000000019 /* PickerView.swift */,
+				AA000000000000000000001A /* LibraryView.swift */,
+				AA000000000000000000001B /* JITStatusView.swift */,
+				AA000000000000000000001C /* JITBridge.swift */,
+				AA000000000000000000001D /* SettingsView.swift */,
+				AA000000000000000000001E /* AboutView.swift */,
+				AA000000000000000000001F /* NextTouch-Bridging-Header.h */,
+				AA0000000000000000000020 /* Info.plist */,
+				AA0000000000000000000021 /* NextTouch.entitlements */,
+				AA0000000000000000000022 /* LaunchScreen.storyboard */,
+				AA0000000000000000000023 /* PrivacyInfo.xcprivacy */,
+				AA0000000000000000000028 /* catalog.json */,
+			);
+			path = NextTouch;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000002C /* ios-jit */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000024 /* NextTouchJIT.c */,
+				AA0000000000000000000025 /* NextTouchJIT.h */,
+				AA0000000000000000000026 /* nexttouch-brk.S */,
+				AA0000000000000000000027 /* nexttouch-jit.js */,
+			);
+			path = ios-jit;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000002D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000029 /* NextTouch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000002A = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000002B /* NextTouch */,
+				AA000000000000000000002C /* ios-jit */,
+				AA000000000000000000002D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+
+		AA0000000000000000000030 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		AA000000000000000000002E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000001 /* NextTouchApp.swift in Sources */,
+				AA0000000000000000000002 /* ContentView.swift in Sources */,
+				AA0000000000000000000003 /* Models.swift in Sources */,
+				AA0000000000000000000004 /* AppStore.swift in Sources */,
+				AA0000000000000000000005 /* PickerView.swift in Sources */,
+				AA0000000000000000000006 /* LibraryView.swift in Sources */,
+				AA0000000000000000000007 /* JITStatusView.swift in Sources */,
+				AA0000000000000000000008 /* JITBridge.swift in Sources */,
+				AA0000000000000000000009 /* SettingsView.swift in Sources */,
+				AA000000000000000000000A /* AboutView.swift in Sources */,
+				AA000000000000000000000D /* NextTouchJIT.c in Sources */,
+				AA000000000000000000000E /* nexttouch-brk.S in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA000000000000000000002F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000000B /* LaunchScreen.storyboard in Resources */,
+				AA000000000000000000000C /* PrivacyInfo.xcprivacy in Resources */,
+				AA0000000000000000000010 /* catalog.json in Resources */,
+				AA000000000000000000000F /* nexttouch-jit.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+
+		AA0000000000000000000034 /* NextTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000033 /* Build configuration list for PBXNativeTarget "NextTouch" */;
+			buildPhases = (
+				AA000000000000000000002E /* Sources */,
+				AA0000000000000000000030 /* Frameworks */,
+				AA000000000000000000002F /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = NextTouch;
+			productName = NextTouch;
+			productReference = AA0000000000000000000029 /* NextTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+
+		AA0000000000000000000031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					AA0000000000000000000034 = { CreatedOnToolsVersion = 15.2; };
+				};
+			};
+			buildConfigurationList = AA0000000000000000000032 /* Build configuration list for PBXProject "NextTouch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = ( en, Base, );
+			mainGroup = AA000000000000000000002A;
+			productRefGroup = AA000000000000000000002D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000034 /* NextTouch */,
+			);
+		};
+
+		AA0000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA0000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NextTouch/NextTouch.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ios-jit";
+				INFOPLIST_FILE = NextTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c12n.nexttouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NextTouch/NextTouch.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ios-jit";
+				INFOPLIST_FILE = NextTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c12n.nexttouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_BRIDGING_HEADER = "NextTouch/NextTouch-Bridging-Header.h";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+			};
+			name = Release;
+		};
+
+		AA0000000000000000000032 /* Build configuration list for PBXProject "NextTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000011 /* Debug */,
+				AA0000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000033 /* Build configuration list for PBXNativeTarget "NextTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000013 /* Debug */,
+				AA0000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+	};
+	rootObject = AA0000000000000000000031 /* Project object */;
+}
