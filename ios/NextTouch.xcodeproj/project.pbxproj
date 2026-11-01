@@ -42,7 +42,7 @@
 		AA0000000000000000000025 /* NextTouchJIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextTouchJIT.h; sourceTree = "<group>"; };
 		AA0000000000000000000026 /* nexttouch-brk.S */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = nexttouch-brk.S; sourceTree = "<group>"; };
 		AA0000000000000000000027 /* nexttouch-jit.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = nexttouch-jit.js; sourceTree = "<group>"; };
-		AA0000000000000000000028 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = catalog.json; path = ../crates/nexttouch-catalog/assets/catalog.json; sourceTree = "<group>"; };
+		AA0000000000000000000028 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = catalog.json; path = ../../crates/nexttouch-catalog/assets/catalog.json; sourceTree = "<group>"; };
 		AA0000000000000000000029 /* NextTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 
 		AA000000000000000000002B /* NextTouch */ = {
