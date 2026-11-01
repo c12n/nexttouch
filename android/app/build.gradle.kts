@@ -39,6 +39,7 @@ android {
     // 64-bit only, one APK per ABI (user requirement): arm64-v8a + x86_64.
     splits {
         abi {
+            isEnable = true
             reset()
             include("arm64-v8a", "x86_64")
             isUniversalApk = false
