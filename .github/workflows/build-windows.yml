@@ -1,0 +1,65 @@
+# NextTouch — Windows builds (x86_64 + arm64)
+# Copyright (c) 2026 c12n Apps — GPL-2.0-or-later
+name: build-windows
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    paths:
+      - "apps/**"
+      - "crates/**"
+      - ".github/workflows/build-windows.yml"
+
+jobs:
+  build:
+    name: windows-${{ matrix.arch }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: x64
+            target: x86_64-pc-windows-msvc
+            runner: windows-latest
+          - arch: arm64
+            target: aarch64-pc-windows-msvc
+            runner: windows-11-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust (stable, ${{ matrix.target }})
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Test catalog + core (release gates)
+        if: matrix.arch == 'x64'
+        run: cargo test --workspace
+
+      - name: Build desktop app
+        run: cargo build --release -p nexttouch --target ${{ matrix.target }}
+
+      - name: Package ZIP
+        shell: pwsh
+        run: |
+          $stage = "stage/NextTouch"
+          New-Item -ItemType Directory -Force $stage | Out-Null
+          Copy-Item "target/${{ matrix.target }}/release/nexttouch.exe" $stage
+          Copy-Item README.md, LICENSE, THIRD_PARTY_NOTICES.md $stage
+          Copy-Item crates/nexttouch-catalog/assets/catalog.json $stage
+          $zip = "NextTouch-windows-${{ matrix.arch }}.zip"
+          Compress-Archive -Path "$stage/*" -DestinationPath $zip
+          Get-FileHash $zip -Algorithm SHA256
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: NextTouch-windows-${{ matrix.arch }}
+          path: NextTouch-windows-${{ matrix.arch }}.zip
+          if-no-files-found: error
+
+# NOTE (arm64 fallback): if the windows-11-arm runner label is ever
+# unavailable on this repo's plan, switch the arm64 leg to
+# runs-on: windows-latest and keep the same aarch64-pc-windows-msvc
+# target — MSVC cross-compiles it natively; only on-device testing needs
+# real arm64 hardware, the build does not.
