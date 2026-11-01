@@ -44,7 +44,7 @@ jobs:
           for apk in android/app/build/outputs/apk/release/*.apk; do
             base=$(basename "$apk")
             case "$base" in
-              *arm64_v8a*) cp "$apk" "out/NextTouch-android-arm64-v8a.apk" ;;
+              *arm64-v8a*) cp "$apk" "out/NextTouch-android-arm64-v8a.apk" ;;
               *x86_64*)    cp "$apk" "out/NextTouch-android-x86_64.apk" ;;
               *) echo "unexpected APK name: $base" ;;
             esac
